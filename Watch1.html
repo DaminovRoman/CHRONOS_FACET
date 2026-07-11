@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>CHRONOS FACET — Галерея часового искусства</title>
+<meta name="description" content="CHRONOS FACET — цифровая галерея редких коллекционных часов. Инженерное совершенство, огранённое временем.">
+<meta name="keywords" content="люксовые часы, коллекционные часы, часовое искусство, швейцарские часы, редкие часы">
+<meta name="author" content="CHRONOS FACET">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://chronosfacet.example/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="CHRONOS FACET — Время, воплощённое в искусстве">
+<meta property="og:description" content="Коллекция редких часов для тех, кто ценит инженерное совершенство. Цифровая галерея высокого часового искусства.">
+<meta property="og:image" content="https://chronosfacet.example/assets/og-cover.jpg">
+<meta property="og:url" content="https://chronosfacet.example/">
+<meta property="og:site_name" content="CHRONOS FACET">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CHRONOS FACET — Время, воплощённое в искусстве">
+<meta name="twitter:description" content="Коллекция редких часов для тех, кто ценит инженерное совершенство.">
+<meta name="twitter:image" content="https://chronosfacet.example/assets/og-cover.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,5 95,35 80,95 20,95 5,35' fill='none' stroke='%23C9CDD3' stroke-width='4'/%3E%3C/svg%3E">
+
+<!-- Preconnect fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo+Expanded:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="Watch1.css">
+
+<!-- Schema.org: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CHRONOS FACET",
+  "url": "https://chronosfacet.example/",
+  "logo": "https://chronosfacet.example/assets/logo.svg",
+  "description": "Цифровая галерея высокого часового искусства. Коллекционные часы инженерного совершенства.",
+  "sameAs": []
+}
+</script>
+
+<!-- Schema.org: Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://chronosfacet.example/" },
+    { "@type": "ListItem", "position": 2, "name": "Коллекции", "item": "https://chronosfacet.example/#collections" },
+    { "@type": "ListItem", "position": 3, "name": "Механизм", "item": "https://chronosfacet.example/#mechanism" },
+    { "@type": "ListItem", "position": 4, "name": "Бутик", "item": "https://chronosfacet.example/#boutique" }
+  ]
+}
+</script>
+
+<!-- Schema.org: Product (Facet Calibre I as flagship) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "CHRONOS FACET — Calibre I",
+  "description": "Флагманский калибр мануфактуры CHRONOS FACET. Ручное взведение, 72 часа запаса хода, турбийон.",
+  "brand": { "@type": "Brand", "name": "CHRONOS FACET" },
+  "material": "Титан класса 5, сапфировый кристалл, платина 950 пробы",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "RUB",
+    "availability": "https://schema.org/LimitedAvailability",
+    "url": "https://chronosfacet.example/#boutique"
+  }
+}
+</script>
+
+<!-- Schema.org: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как записаться на персональную консультацию в бутике?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Оставьте заявку в разделе «Бутик» — куратор коллекции свяжется с вами в течение 24 часов для назначения приватного визита." }
+    },
+    {
+      "@type": "Question",
+      "name": "Предоставляется ли международная гарантия?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Каждый экземпляр CHRONOS FACET сопровождается международной гарантией мануфактуры сроком на 8 лет и сертификатом подлинности." }
+    },
+    {
+      "@type": "Question",
+      "name": "Возможна ли индивидуальная настройка механизма?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Да, отдел высокого часового искусства принимает частные заказы на кастомизацию усложнений и отделки по предварительной записи." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ NOISE / GRAIN OVERLAY ============ -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader-facet" viewBox="0 0 200 200">
+    <polygon class="preloader-facet-poly" points="100,10 190,70 160,190 40,190 10,70" fill="none" stroke="currentColor" stroke-width="1"/>
+  </svg>
+  <span class="preloader-label">CHRONOS FACET</span>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand-mark" aria-label="CHRONOS FACET — на главную">
+      <svg class="brand-mark-icon" viewBox="0 0 40 40" aria-hidden="true">
+        <polygon points="20,2 38,14 32,38 8,38 2,14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-mark-text">CHRONOS<span class="brand-mark-facet">FACET</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Основная навигация">
+      <a href="#philosophy" class="nav-link"><span class="nav-link-index">01</span>Философия</a>
+      <a href="#collections" class="nav-link"><span class="nav-link-index">02</span>Коллекции</a>
+      <a href="#mechanism" class="nav-link"><span class="nav-link-index">03</span>Механизм</a>
+      <a href="#materials" class="nav-link"><span class="nav-link-index">04</span>Материалы</a>
+      <a href="#boutique" class="nav-link"><span class="nav-link-index">05</span>Бутик</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#boutique" class="btn btn-ghost header-cta">Записаться в бутик</a>
+      <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-facets" aria-hidden="true">
+    <div class="mobile-menu-facet mobile-menu-facet-1"></div>
+    <div class="mobile-menu-facet mobile-menu-facet-2"></div>
+  </div>
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Закрыть меню">
+  <span class="mobile-menu-close-ring"></span>
+  <span class="mobile-menu-close-line"></span>
+  </button>
+  <nav class="mobile-nav" aria-label="Мобильная навигация">
+    <a href="#philosophy" class="mobile-nav-link"><span>01</span>Философия</a>
+    <a href="#collections" class="mobile-nav-link"><span>02</span>Коллекции</a>
+    <a href="#mechanism" class="mobile-nav-link"><span>03</span>Механизм</a>
+    <a href="#materials" class="mobile-nav-link"><span>04</span>Материалы</a>
+    <a href="#boutique" class="mobile-nav-link"><span>05</span>Бутик</a>
+  </nav>
+  <a href="#boutique" class="btn btn-primary mobile-menu-cta">Записаться в бутик</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-facets" aria-hidden="true">
+      <div class="facet-plane facet-plane-1"></div>
+      <div class="facet-plane facet-plane-2"></div>
+      <div class="facet-plane facet-plane-3"></div>
+    </div>
+
+    <div class="hero-watch-stage" aria-hidden="true">
+      <div class="hero-watch-glow"></div>
+      <div class="hero-watch-img-wrap">
+        <img src="img/111.jpg" alt="" class="hero-watch-img" loading="eager">
+      </div>
+      <svg class="hero-ring hero-ring-1" viewBox="0 0 400 400"><circle cx="200" cy="200" r="190" fill="none" stroke="currentColor" stroke-width="0.5"/></svg>
+      <svg class="hero-ring hero-ring-2" viewBox="0 0 400 400"><circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 6"/></svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="eyebrow-line"></span>Мануфактура высокого часового искусства</p>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Время,</span>
+        <span class="hero-title-line hero-title-line-accent">воплощённое</span>
+        <span class="hero-title-line">в искусстве.</span>
+      </h1>
+      <p class="hero-subtitle">Коллекция редких часов для тех, кто ценит инженерное совершенство.</p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn btn-primary">
+          <span>Изучить коллекцию</span>
+        </a>
+        <a href="#boutique" class="btn btn-outline">
+          <span>Записаться в бутик</span>
+        </a>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- ============ PHILOSOPHY ============ -->
+  <section class="philosophy" id="philosophy">
+    <div class="philosophy-inner">
+      <div class="philosophy-quote-block reveal-up">
+        <svg class="quote-mark" viewBox="0 0 60 40" aria-hidden="true"><path d="M0 40V20C0 8 8 0 20 0V8C13 8 8 13 8 20H20V40H0ZM32 40V20C32 8 40 0 52 0V8C45 8 40 13 40 20H52V40H32Z" fill="currentColor"/></svg>
+        <p class="philosophy-quote">Мы не производим часы. Мы огранённо фиксируем момент инженерной истины — и передаём его через поколения.</p>
+        <p class="philosophy-quote-attr">— Мастерская CHRONOS FACET, основана в 1994 году</p>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-item reveal-up">
+          <span class="philosophy-item-num">I</span>
+          <h3 class="philosophy-item-title">Огранка времени</h3>
+          <p class="philosophy-item-text">Каждый калибр рассматривается как драгоценный камень — грань за гранью, до тех пор, пока механизм не начнёт дышать светом.</p>
+        </div>
+        <div class="philosophy-item reveal-up">
+          <span class="philosophy-item-num">II</span>
+          <h3 class="philosophy-item-title">Редкость по замыслу</h3>
+          <p class="philosophy-item-text">Ограниченные серии — не маркетинговый приём, а следствие ручной сборки: мастер собирает не более 40 экземпляров калибра в год.</p>
+        </div>
+        <div class="philosophy-item reveal-up">
+          <span class="philosophy-item-num">III</span>
+          <h3 class="philosophy-item-title">Наследие, а не аксессуар</h3>
+          <p class="philosophy-item-text">Часы CHRONOS FACET проектируются с расчётом на три поколения владельцев — с полной ремонтопригодностью через 80 лет.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COLLECTIONS ============ -->
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <p class="section-eyebrow"><span class="eyebrow-line"></span>02 — Коллекции</p>
+      <h2 class="section-title">Каждая коллекция — <span class="title-accent">архитектурная композиция</span></h2>
+    </div>
+
+    <div class="collection-list">
+
+      <article class="collection-item collection-item-1">
+        <div class="collection-visual">
+          <div class="collection-visual-facet" aria-hidden="true"></div>
+          <img src="img/1.jpg" alt="Часы CHRONOS FACET Origin на тёмном фоне, вид спереди" class="collection-img" loading="lazy">
+        </div>
+        <div class="collection-info">
+          <span class="collection-index">01</span>
+          <h3 class="collection-name">FACET ORIGIN</h3>
+          <p class="collection-desc">Первая огранка мануфактуры. Классический трёхстрелочный калибр в корпусе из матового титана — начало языка бренда.</p>
+          <ul class="collection-specs">
+            <li><span>Калибр</span><span>CF-01 Manufacture</span></li>
+            <li><span>Запас хода</span><span>68 часов</span></li>
+            <li><span>Корпус</span><span>Титан класса 5, Ø 39 мм</span></li>
+          </ul>
+          <a href="#boutique" class="collection-link">Записаться на просмотр <span class="link-arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="collection-item collection-item-2">
+        <div class="collection-visual">
+          <div class="collection-visual-facet" aria-hidden="true"></div>
+          <img src="img/2.jpg" alt="Часы CHRONOS FACET Tourbillon с открытым турбийоном" class="collection-img" loading="lazy">
+        </div>
+        <div class="collection-info">
+          <span class="collection-index">02</span>
+          <h3 class="collection-name">FACET TOURBILLON</h3>
+          <p class="collection-desc">Летающий турбийон, видимый через сапфировое окно на 6 часах. Мост турбийона огранён вручную под 27 углами.</p>
+          <ul class="collection-specs">
+            <li><span>Калибр</span><span>CF-07 Flying Tourbillon</span></li>
+            <li><span>Запас хода</span><span>96 часов</span></li>
+            <li><span>Корпус</span><span>Карбон + платина 950, Ø 41 мм</span></li>
+          </ul>
+          <a href="#boutique" class="collection-link">Записаться на просмотр <span class="link-arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="collection-item collection-item-3">
+        <div class="collection-visual">
+          <div class="collection-visual-facet" aria-hidden="true"></div>
+          <img src="img/3.jpg" alt="Часы CHRONOS FACET Noir в чёрной керамике" class="collection-img" loading="lazy">
+        </div>
+        <div class="collection-info">
+          <span class="collection-index">03</span>
+          <h3 class="collection-name">FACET NOIR</h3>
+          <p class="collection-desc">Полностью чёрная керамика с гранёным безелем. Тень, которая ловит свет вместо того, чтобы его поглощать.</p>
+          <ul class="collection-specs">
+            <li><span>Калибр</span><span>CF-03 Automatic</span></li>
+            <li><span>Запас хода</span><span>72 часа</span></li>
+            <li><span>Корпус</span><span>Чёрная керамика, Ø 40 мм</span></li>
+          </ul>
+          <a href="#boutique" class="collection-link">Записаться на просмотр <span class="link-arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ MECHANISM ============ -->
+  <section class="mechanism" id="mechanism">
+    <div class="section-header section-header-light">
+      <p class="section-eyebrow reveal-up mech-header-1"><span class="eyebrow-line"></span>03 — Механизм</p>
+      <h2 class="section-title reveal-up mech-header-2">Анатомия калибра CF-07</h2>
+      <p class="section-lead reveal-up mech-header-3">Наведите курсор на слои механизма или прокрутите ниже — конструкция раскрывается послойно, как при сборке на мануфактуре.</p>
+    </div>
+
+    <div class="mechanism-stage">
+      <div class="mechanism-visual">
+        <svg class="mechanism-svg" viewBox="0 0 500 500" role="img" aria-label="Схема механизма калибра CF-07 в разрезе">
+          <circle class="mech-layer" data-layer="plate" cx="250" cy="250" r="220" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle class="mech-layer" data-layer="barrel" cx="250" cy="250" r="170" fill="none" stroke="currentColor" stroke-width="1"/>
+          <circle class="mech-layer" data-layer="gears" cx="180" cy="200" r="46" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle class="mech-layer" data-layer="gears" cx="320" cy="200" r="34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle class="mech-layer" data-layer="gears" cx="250" cy="320" r="38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <g class="mech-layer" data-layer="tourbillon">
+            <circle cx="250" cy="250" r="62" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="250" y1="188" x2="250" y2="312" stroke="currentColor" stroke-width="1"/>
+            <line x1="188" y1="250" x2="312" y2="250" stroke="currentColor" stroke-width="1"/>
+            <circle cx="250" cy="250" r="8" fill="currentColor"/>
+          </g>
+          <g class="mech-layer" data-layer="jewels">
+            <circle cx="180" cy="200" r="6" fill="currentColor" opacity="0.6"/>
+            <circle cx="320" cy="200" r="6" fill="currentColor" opacity="0.6"/>
+            <circle cx="250" cy="320" r="6" fill="currentColor" opacity="0.6"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="mechanism-layers">
+        <button class="mech-layer-btn" data-target="plate" aria-pressed="false">
+          <span class="mech-layer-index">01</span>
+          <span class="mech-layer-info"><span class="mech-layer-name">Основная плата</span><span class="mech-layer-desc">Мельхиор с родиевым покрытием, шлифовка «Женевские полосы»</span></span>
+        </button>
+        <button class="mech-layer-btn" data-target="barrel" aria-pressed="false">
+          <span class="mech-layer-index">02</span>
+          <span class="mech-layer-info"><span class="mech-layer-name">Баррельный узел</span><span class="mech-layer-desc">Двойной баррель — 96 часов автономного хода</span></span>
+        </button>
+        <button class="mech-layer-btn" data-target="gears" aria-pressed="false">
+          <span class="mech-layer-index">03</span>
+          <span class="mech-layer-info"><span class="mech-layer-name">Колёсная передача</span><span class="mech-layer-desc">Шестерни из чёрного полированного никеля, зуб «эпициклоида»</span></span>
+        </button>
+        <button class="mech-layer-btn" data-target="tourbillon" aria-pressed="false">
+          <span class="mech-layer-index">04</span>
+          <span class="mech-layer-info"><span class="mech-layer-name">Летающий турбийон</span><span class="mech-layer-desc">Полный оборот каретки за 60 секунд, титановый мост</span></span>
+        </button>
+        <button class="mech-layer-btn" data-target="jewels" aria-pressed="false">
+          <span class="mech-layer-index">05</span>
+          <span class="mech-layer-info"><span class="mech-layer-name">Рубиновые камни</span><span class="mech-layer-desc">37 камней, вручную установленных под микроскопом</span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mechanism-specs">
+      <div class="mechanism-spec-item">
+        <span class="mechanism-spec-value"><span class="spec-count" data-count-to="96">0</span><span class="mechanism-spec-unit">ч</span></span>
+        <span class="mechanism-spec-label">Запас хода</span>
+      </div>
+      <div class="mechanism-spec-item">
+        <span class="mechanism-spec-value"><span class="spec-count" data-count-to="21600" data-format="thousands">0</span></span>
+        <span class="mechanism-spec-label">Частота, пк/ч</span>
+      </div>
+      <div class="mechanism-spec-item">
+        <span class="mechanism-spec-value"><span class="spec-count" data-count-to="312">0</span></span>
+        <span class="mechanism-spec-label">Деталей в калибре</span>
+      </div>
+      <div class="mechanism-spec-item">
+        <span class="mechanism-spec-value"><span class="spec-count" data-count-to="37">0</span></span>
+        <span class="mechanism-spec-label">Рубиновых камней</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATERIALS ============ -->
+  <section class="materials" id="materials">
+    <div class="section-header">
+      <p class="section-eyebrow"><span class="eyebrow-line"></span>04 — Материалы</p>
+      <h2 class="section-title">Материя, <span class="title-accent">достойная времени</span></h2>
+    </div>
+
+    <div class="materials-grid">
+      <div class="material-card">
+        <div class="material-visual"><img src="img/4.jpg" alt="Макросъёмка сапфирового кристалла" loading="lazy"></div>
+        <h3 class="material-name">Сапфировый кристалл</h3>
+        <p class="material-desc">Твёрдость 9 по шкале Мооса. Антибликовое покрытие с обеих сторон, наносимое в девять слоёв.</p>
+      </div>
+      <div class="material-card">
+        <div class="material-visual"><img src="img/5.jpg" alt="Макросъёмка титана класса 5" loading="lazy"></div>
+        <h3 class="material-name">Титан класса 5</h3>
+        <p class="material-desc">В 2 раза легче стали при равной прочности. Гипоаллергенен, не темнеет со временем.</p>
+      </div>
+      <div class="material-card">
+        <div class="material-visual"><img src="img/6.jpg" alt="Макросъёмка чёрной керамики" loading="lazy"></div>
+        <h3 class="material-name">Чёрная керамика</h3>
+        <p class="material-desc">Устойчива к царапинам, не тускнеет под UV. Полируется вручную до зеркального блеска 40 часов.</p>
+      </div>
+      <div class="material-card">
+        <div class="material-visual"><img src="img/7.jpg" alt="Макросъёмка карбонового волокна" loading="lazy"></div>
+        <h3 class="material-name">Форжированный карбон</h3>
+        <p class="material-desc">Уникальный узор волокон — не найти двух идентичных корпусов. Легче титана на 30%.</p>
+      </div>
+      <div class="material-card">
+        <div class="material-visual"><img src="img/8.jpg" alt="Макросъёмка платины 950 пробы" loading="lazy"></div>
+        <h3 class="material-name">Платина 950</h3>
+        <p class="material-desc">Плотность, которую невозможно подделать «на вес». Патина проявляется через годы ношения.</p>
+      </div>
+      <div class="material-card">
+        <div class="material-visual"><img src="img/9.jpg" alt="Макросъёмка дымчатого кварца" loading="lazy"></div>
+        <h3 class="material-name">Дымчатый кварц</h3>
+        <p class="material-desc">Используется в лимитированных циферблатах — естественный градиент, невоспроизводимый дважды.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ART OF DETAIL ============ -->
+  <section class="detail-art" id="detailArt">
+    <div class="detail-art-track">
+      <figure class="detail-art-frame" data-detail-index="0" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Открыть деталь крупным планом: анкерная вилка">
+        <img src="img/10.jpg" alt="Художественная деталь механизма: анкерная вилка крупным планом" loading="lazy">
+        <figcaption>Анкерная вилка — узел точности, определяющий ход всего механизма</figcaption>
+      </figure>
+      <figure class="detail-art-frame" data-detail-index="1" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Открыть деталь крупным планом: гравировка на мосте">
+        <img src="img/11.jpg" alt="Художественная деталь механизма: гравировка на мосте" loading="lazy">
+        <figcaption>Ручная гравировка моста — 14 часов работы одного мастера</figcaption>
+      </figure>
+      <figure class="detail-art-frame" data-detail-index="2" role="button" tabindex="0" aria-haspopup="dialog" aria-label="Открыть деталь крупным планом: шлифовка Женевские полосы">
+        <img src="img/12.jpg" alt="Художественная деталь механизма: шлифовка Женевские полосы" loading="lazy">
+        <figcaption>Шлифовка «Женевские полосы» — свет скользит по металлу волнами</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ DETAIL LIGHTBOX (fullscreen viewer for Art of Detail) ============ -->
+  <div class="detail-lightbox" id="detailLightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="detailLightboxCaption">
+    <button class="detail-lightbox-close" id="detailLightboxClose" aria-label="Закрыть просмотр">
+      <span class="detail-lightbox-close-line"></span>
+      <span class="detail-lightbox-close-line"></span>
+    </button>
+    <div class="detail-lightbox-stage">
+      <img class="detail-lightbox-img" id="detailLightboxImg" src="" alt="">
+      <p class="detail-lightbox-caption" id="detailLightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ============ BOUTIQUE ============ -->
+  <section class="boutique" id="boutique">
+    <div class="boutique-visual">
+      <img src="img/13.jpg" alt="Интерьер бутика CHRONOS FACET" loading="lazy">
+    </div>
+    <div class="boutique-content">
+      <p class="section-eyebrow"><span class="eyebrow-line"></span>05 — Бутик</p>
+      <h2 class="section-title">Приватный визит <span class="title-accent">в мастерскую</span></h2>
+      <p class="boutique-text">Каждый визит в бутик CHRONOS FACET — это приватная встреча с куратором коллекции. Никакой спешки, никаких очередей: только вы, механизм и время на раздумья.</p>
+
+      <form class="boutique-form" id="boutiqueForm" novalidate>
+        <div class="form-row">
+          <label class="form-label" for="fName">Имя</label>
+          <input class="form-input" type="text" id="fName" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="fContact">Телефон или e-mail</label>
+          <input class="form-input" type="text" id="fContact" name="contact" autocomplete="tel" required>
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="fInterest">Интересующая коллекция</label>
+          <select class="form-input form-select" id="fInterest" name="interest">
+            <option value="origin">FACET ORIGIN</option>
+            <option value="tourbillon">FACET TOURBILLON</option>
+            <option value="noir">FACET NOIR</option>
+            <option value="undecided">Пока не определился(-лась)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <span>Записаться на консультацию</span>
+        </button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header">
+      <p class="section-eyebrow"><span class="eyebrow-line"></span>Коллекционеры</p>
+      <h2 class="section-title">Слова тех, кто <span class="title-accent">уже владеет временем</span></h2>
+    </div>
+
+    <div class="testimonials-track" id="testimonialsTrack">
+      <blockquote class="testimonial-card">
+        <p class="testimonial-text">Я держал в руках десятки часов. Впервые почувствовал, что держу инженерную мысль, а не изделие.</p>
+        <cite class="testimonial-author">— Владелец FACET TOURBILLON, Москва</cite>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <p class="testimonial-text">Приобрёл как инвестицию. Оставил себе, потому что не смог снять с руки в первую неделю.</p>
+        <cite class="testimonial-author">— Владелец FACET NOIR, Дубай</cite>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <p class="testimonial-text">Куратор бутика знал о калибре больше, чем я успел прочитать за месяц. Это и убедило.</p>
+        <cite class="testimonial-author">— Владелец FACET ORIGIN, Санкт-Петербург</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="final-cta-facets" aria-hidden="true">
+      <div class="final-cta-facet final-cta-facet-1"></div>
+      <div class="final-cta-facet final-cta-facet-2"></div>
+    </div>
+    <div class="final-cta-content">
+      <h2 class="final-cta-title">Ваше время заслуживает <span class="title-accent">исключительного исполнения.</span></h2>
+      <div class="final-cta-actions">
+        <a href="#boutique" class="btn btn-primary">Посетить бутик</a>
+        <a href="#boutique" class="btn btn-outline">Персональная консультация</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark-text">CHRONOS<span class="brand-mark-facet">FACET</span></span>
+      <p class="footer-tagline">Мануфактура высокого часового искусства. Основана в 1994 году.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="#philosophy">Философия</a>
+      <a href="#collections">Коллекции</a>
+      <a href="#mechanism">Механизм</a>
+      <a href="#materials">Материалы</a>
+      <a href="#boutique">Бутик</a>
+    </nav>
+    <div class="footer-meta">
+      <p>© 2026 CHRONOS FACET. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="Watch1.js"></script>
+</body>
+</html>
